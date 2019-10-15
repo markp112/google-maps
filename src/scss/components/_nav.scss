@@ -1,0 +1,33 @@
+
+nav {
+    background-color: $navbar-background;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100vw;
+    height: $navbar-height;
+
+    i {
+        padding: calc((#{$navbar-height} - 32px) * 0.5);
+    }
+
+    ul.links {
+        display: none;
+     
+        @include sm {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            float: right;
+            
+        }
+
+        li {
+            color: $navbar-color;
+            padding: 18px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    }
+}

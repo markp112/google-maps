@@ -1,0 +1,18 @@
+// vendor imports
+@import './vendor/reset';
+
+// module imports
+@import './modules/responsiveness';
+@import './modules/variables';
+
+// component imports
+@import './components/nav';
+@import './components/layouts';
+@import './components/map';
+@import './components/footer';
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
