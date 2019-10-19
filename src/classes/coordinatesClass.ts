@@ -1,10 +1,10 @@
 
-export default class ICoordinate {
-  lat:string;
-  lng:string;
+export class ICoordinate {
+  lat: number;
+  lng: number;
 
-  constructor(lat, lng) {
-    this.lat = lat,
-    this.lng = lng;
+  constructor(latitude: number, longitude: number) {
+    this.lat = latitude,
+    this.lng = longitude;
   }
 }

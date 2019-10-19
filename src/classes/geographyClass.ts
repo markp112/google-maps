@@ -1,18 +1,17 @@
-import ICoordinate from "./coordinatesClass";
+import { ICoordinate } from "./coordinatesClass";
 
-export default class IGeography  {
-  location:string;
-  _coordinates:ICoordinate;
+export default class IGeography {
+  location: string;
+  _coordinates: ICoordinate;
 
-  constructor (location:string) {
+  constructor(location: string) {
     this.location = location
   }
-  
-  set coordinates(coordinates:ICoordinate) {
-    this._coordinates = coordinates;
+  set coordinates(coord: ICoordinate) {
+    this._coordinates = coord;
   }
-  get coordinates () {
-    return this.coordinates;
+  get coordinates() {
+    return this._coordinates;
   }
-  
+
 }

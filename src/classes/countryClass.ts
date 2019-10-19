@@ -1,15 +1,15 @@
 import IGeography from './geographyClass';
 
 export default class ICountry {
-  name:string;
-  _introduction:string;
-  _geography:IGeography;
+  name: string;
+  _introduction: string;
+  _geography: IGeography;
 
-  constructor(name:string) {
+  constructor(name: string) {
     this.name = name
   }
 
-  set introduction(introduction:string) {
+  set introduction(introduction: string) {
     this._introduction = introduction;
   }
 
@@ -17,11 +17,11 @@ export default class ICountry {
     this._geography = geography;
   }
 
-  get introduction () {
+  get introduction() {
     return this._introduction;
   }
 
-  get geography () {
+  get geography() {
     return this._geography;
   }
 }
