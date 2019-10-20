@@ -1,0 +1,16 @@
+.facts {
+  position: absolute;
+  top: 12%;
+  left: $control-panel-pos-left;
+  background-color: $map-5-hex;
+  width: 85%;
+  font-size: 0.9em;
+  padding: 12px;
+  line-height: 2em;
+
+  p {
+    span {
+      padding-left:10px;
+    }
+  }
+}

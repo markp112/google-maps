@@ -1,32 +1,46 @@
-.parent {
-  margin-top: $navbar-height;
-  display: grid;
-  grid-template-columns: 2fr 8fr;
-  grid-template-rows: 4fr 2.5fr 0.5fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+
+  .grid-container {
+    
+    display: grid;
+    grid-template-columns: 0.8fr 1fr 1fr 1fr;
+    grid-template-rows: 0.18fr 1fr 1fr 1fr 0.1fr;
+    grid-template-areas: "nav nav nav nav" 
+                        "control-panel map map map" 
+                        "control-panel map map map" 
+                        "control-panel data-area data-area data-area" 
+                        "footer footer footer footer";
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .map { grid-area: map; 
+    background-color: $map-5-hex;
+    height: 100%;
+    width: 100%;
   }
   
   .control-panel { 
-      grid-area: 1 / 1 / 3 / 2;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      width: 90%;
-      padding: 10px;
-      position: relative;
+    grid-area: control-panel;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+
+    label{
+      margin-bottom: 4px;
+    }
+    @include select-style;
+   }
   
-      label{
-        margin-bottom: 4px;
-      }
-      @include select-style;
-  }
-  .map { grid-area: 1 / 2 / 2 / 3; }
-  .data { grid-area: 2 / 2 / 3 / 3;
+  .data-area { 
+    grid-area: data-area; 
     background-color: $map-5-hex;
     padding: 20px;
     line-height: 1.5em;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
   }
   
-  .footer { grid-area: 3 / 1 ; }
-
+  .footer { grid-area: footer; }

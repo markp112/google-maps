@@ -11,6 +11,7 @@
             async
             defer
         ></script>
+        <script src="https://kit.fontawesome.com/f645ac3a49.js" crossorigin="anonymous"></script>
         <script src="./dist/main.js" async defer></script>
         <title>World Fact Book</title>
     </head>
@@ -22,17 +23,24 @@
                 <li>TBD</li>
             </ul>
         </nav>
-        <section class="parent">
+        <section class="grid-container">
+            <div class="map" id="map"></div>
             <div class="control-panel">
                 <label for="countryList">Select Country:</label>
                 <div class="box">
-            
                     <select name="country-list" class="drop-down" id="country-list" ></select>
                 </div>
+                <div class="facts">
+                    <p id="total-area">Total Area:<span></span></p>
+                    <P id="land-mass">Land Mass:<span></span></P>
+                    <p id="water-mass">Water Mass:<span></span></p>
+
+                </div>
             </div>
-            <div class="map" id="map"></div>
-            <div class="data"></div>
-            
+            <div class="data-area">
+
+            </div>
+
             <div class="footer"></div>
         </section>
     </body>
