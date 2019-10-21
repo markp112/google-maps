@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { displayCountrySelected } from '../handlers/countryHandler';
-
+// retrieve a list of the countries
 const getCountries = (): Promise<Array<string>> => {
     return new Promise((resolve, reject) => {
         axios.get('http://localhost:8085/getCountryList/')
@@ -14,7 +14,7 @@ const getCountries = (): Promise<Array<string>> => {
     })
 };
 
-//format the country remove underscores and capitalise first letters
+// format the country remove underscores and capitalise first letters
 // input a name of a country
 // output country name formatted
 const formatCountry = (country: string): string => {
