@@ -11,6 +11,7 @@ The application is developed to a point where the user can select a country and 
 
 # Installation
 
-1 From the command line run git clone https://github.com/markp112/google-maps.git
-2 Once the package has cloned type yarn install is using yarn or npm install
-3 To run the application type yarn build
+1. From the command line run git clone https://github.com/markp112/google-maps.git
+2. Once the package has cloned type yarn install is using yarn or npm install
+3. To run the application type yarn build
+
